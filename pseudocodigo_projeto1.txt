@@ -1,0 +1,64 @@
+Passo a passo do jogo da forca 🎮
+1️⃣ Limpar a tela
+
+Verifica qual sistema operacional tá rodando.
+
+Se for Windows, limpa com cls, se for outro, usa clear.
+
+2️⃣ Preparar o jogo
+
+Cria uma lista com palavras que podem aparecer no jogo.
+
+Escolhe uma palavra aleatória dessa lista.
+
+Separa a palavra em letras.
+
+Monta um tabuleiro cheio de "_" pra representar cada letra da palavra.
+
+Define que o jogador tem 6 chances pra acertar.
+
+Cria uma lista pra guardar as letras que ele já tentou.
+
+3️⃣ Mostrar a situação do jogo
+
+Exibe o desenho da forca, dependendo das chances restantes.
+
+Mostra o tabuleiro com as letras acertadas.
+
+4️⃣ Pedir uma letra pro jogador
+
+Pede pra digitar uma letra.
+
+Transforma em minúscula e remove espaços extras.
+
+5️⃣ Verificar se a entrada é válida
+
+Checa se é só uma letra, sem número ou acento.
+
+Se for inválida, avisa o jogador e pede de novo.
+
+Se ele já tentou essa letra antes, alerta e pede outra.
+
+6️⃣ Verificar se a letra está na palavra
+
+Se estiver:
+
+Dá os parabéns e revela a letra no tabuleiro.
+
+Se todas as letras forem descobertas, avisa que ele ganhou! 🎉
+
+Se não estiver:
+
+Diz que ele errou.
+
+Tira uma chance dele. 😭
+
+7️⃣ Continuar até acabar
+
+Se o jogador perder todas as chances, mostra a palavra correta e dá o game over.
+
+8️⃣ Finalizar o jogo
+
+Dá uma mensagem de encerramento.
+
+Agradece o jogador por testar. 🎮
