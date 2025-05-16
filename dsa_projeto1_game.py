@@ -43,7 +43,7 @@ def display_hangman(chances):
                    |      O
                    |     \\|
                    |      |
-                   |     
+                   |      
                    -
                 """,
                 """
@@ -52,25 +52,25 @@ def display_hangman(chances):
                    |      O
                    |      |
                    |      |
-                   |     
+                   |      
                    -
                 """,
                 """
                    --------
                    |      |
                    |      O
-                   |    
-                   |      
                    |     
+                   |      
+                   |      
                    -
                 """,
                 """
                    --------
                    |      |
                    |      
-                   |    
-                   |      
                    |     
+                   |      
+                   |      
                    -
                 """
     ]
@@ -84,10 +84,10 @@ def eh_letra_valida(letra):
 def game():
     limpa_tela()
     print("\nBem-vindo ao jogo da forca 🎮!")
-    print("Adivinhe a palavra abaixo:")
-    print("Vamos jogaaaar :)\nc")
+    print("Adivinhe a fruta abaixo:")
+    print("Vamos jogaaaar :)\n")
     
-    palavras = ['banana', 'abacate', 'uva', 'morango', 'laranja', 'pitaya', 'kiwi', 'rambutan', 'caju', ' pequi', 'sapoti', 'umbu', 'bacuri', 'acerola', 'alfarroba']
+    palavras = ['banana', 'abacate', 'uva', 'morango', 'bacuri', 'Physalis', 'Jenipapo', 'Araticum', 'Graviola', 'Pitanga', 'Pequi', 'Umbu', 'Cabeludinha', 'Abrunho', 'caju', 'laranja', 'pitaya', 'kiwi', 'rambutan', 'caju', 'pequi', 'sapoti', 'umbu', 'bacuri', 'acerola', 'alfarroba']
     
     palavra = random.choice(palavras)
     
@@ -101,7 +101,8 @@ def game():
     
     while chances > 0:
         print(display_hangman(chances))
-        print("Palavra: ", tabuleiro)
+        print("Palavra: ", " ".join(tabuleiro))
+        print("Letras já tentadas:", ", ".join(letras_tentativas)) 
         print("\n")
         
         tentativa = input("\nDigite uma letra: ").lower().strip()
@@ -131,8 +132,8 @@ def game():
             chances -= 1
     
     if "_" in tabuleiro:
-        print("\nGAMER OVER! Você perdeu tururururu 😭! A palavra era: {}.".format(palavra))
+        print("\nGAME OVER! Você perdeu tururururu 😭! A palavra era: {}.".format(palavra))
 
 if __name__ == "__main__":
     game()
-    print("\nParabéns! Obrigada por ver e testar meu aprendizado em programação em Python com a DSA.🎮 :)\n")
+    print("\nParabéns! Obrigado por testar meu aprendizado em programação em Python com a DSA. 🎮 :)\n")
